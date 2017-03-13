@@ -16,7 +16,7 @@ Clone the repository and manually invoke `composer` using the shipped
 `composer.phar`:
 
     cd my/project/dir
-    git://github.com/bigemployee/zend_modules.git
+    git://github.com/shoaibgits/zend_modules.git
     cd zend_modules
     php composer.phar self-update
     php composer.phar install
