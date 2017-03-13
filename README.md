@@ -1,2 +1,2 @@
 # zend_modules
-Modules Creatioon Using the Zend Framework 2 , 
+Modules Creation Using the Zend Framework 2 , 
