@@ -1,5 +1,13 @@
-ZF2 Modules
+Big-Sticky-Notes
 ================
+    ______ _         _____                 _
+    | ___ (_)       |  ___|               | |
+    | |_/ /_  __ _  | |__  _ __ ___  _ __ | | ___  _   _  ___  ___
+    | ___ \ |/ _` | |  __|| '_ ` _ \| '_ \| |/ _ \| | | |/ _ \/ _ \
+    | |_/ / | (_| | | |___| | | | | | |_) | | (_) | |_| |  __/  __/
+    \____/|_|\__, | \____/|_| |_| |_| .__/|_|\___/ \__, |\___|\___|
+              __/ |                 | |             __/ |
+             |___/                  |_|            |___/
 
 Introduction
 ------------
@@ -16,8 +24,8 @@ Clone the repository and manually invoke `composer` using the shipped
 `composer.phar`:
 
     cd my/project/dir
-    git://github.com/shoaibgits/zend_modules.git
-    cd zend_modules
+    git://github.com/bigemployee/Big-Sticky-Notes.git
+    cd Big-Sticky-Notes
     php composer.phar self-update
     php composer.phar install
 
