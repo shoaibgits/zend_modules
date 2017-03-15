@@ -1,12 +1,14 @@
-body {
+/* body {
     padding-top: 60px;
     padding-bottom: 40px;
 }
-
+*/
 .zf-green {
     color: #68b604;
 }
-
+body {
+    background-color: #f5f7fa;
+    }
 .btn-success {
   background-color: #57a900;
   background-image: -moz-linear-gradient(top, #70d900, #57a900);
@@ -17,7 +19,55 @@ body {
   background-image: linear-gradient(top, #70d900, #57a900);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#70d900', endColorstr='#57a900', GradientType=0);
 }
-
+.logo-section {
+  float: left;
+  overflow: hidden;
+  width: 33%;
+}
+.search-section input {
+  height: auto !important;
+  padding: 10px;
+  width: 100%;
+}
+.about-page-wrapper .top-contents h1, .about-page-wrapper .top-contents p , .about-page-wrapper .top-middle-contents h1  {
+  text-align: center;
+}
+.about-page-wrapper .top-middle-contents p{
+    text-align: justify;
+}
+footer {
+  background-color: #eeeeee;
+  overflow: hidden;
+   padding: 40px 0 0;
+}
+.footer-bottom {
+  overflow: hidden;
+  padding: 30px 0;
+  text-align: center;
+  width: 100%;
+}
+.search-section {
+  float: left;
+  padding: 40px;
+  width: 33%;
+}
+footer .span2 {
+    width: 200px;
+}
+footer li {
+  list-style: outside none none;
+}
+footer ul {
+  margin: 0;
+}
+footer ul li a {
+  color: #999;
+}
+.nav-collapse.collapse.main-navigation {
+  float: left;
+  padding: 40px 10px;
+  width: 33%;
+}
 .btn-success:hover,
 .btn-success:active,
 .btn-success.active,
@@ -29,9 +79,11 @@ body {
 .btn-success:active, .btn-success.active {
   background-color: #57a900;
 }
-
+.logo-section {
+  overflow: hidden;
+}
 div.container a.brand {
-    background: url("../images/zf2-logo.png") no-repeat scroll 0 10px transparent;
+    /* background: url("../images/logo.png") no-repeat scroll 0 10px transparent;*/
     margin-left: 0;
     padding: 8px 20px 12px 40px;
 }

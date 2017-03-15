@@ -11,7 +11,7 @@
 
 * { box-sizing:border-box; }
 
-body { background:url(http://subtlepatterns.com/patterns/little_pluses.png) #cacaca;}
+/* body { background:url(http://subtlepatterns.com/patterns/little_pluses.png) #cacaca;}*/
 
 #sticky-notes {
     float: left;

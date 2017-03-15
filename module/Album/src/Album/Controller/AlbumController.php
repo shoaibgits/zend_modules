@@ -18,6 +18,7 @@ namespace Album\Controller;
 
  class AlbumController extends AbstractActionController
  {
+    
     protected $albumTable;
     public function getAlbumTable()
      {

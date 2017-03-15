@@ -6,7 +6,8 @@
  * to the application root now.
  */
 chdir(dirname(__DIR__));
-
+error_reporting(E_ALL);
+ini_set('display_errors', false);
 // Setup autoloading
 require 'init_autoloader.php';
 

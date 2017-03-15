@@ -34,14 +34,22 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </a>
-                    <a class="brand" href="<?php echo $this->url('home') ?>"><?php echo $this->translate('Shoaib Zend Training') ?></a>
-                    <div class="nav-collapse collapse">
+                    <div class="logo-section">
+                    <a class="brand" href="<?php echo $this->url('home') ?>">
+                    <img src="http://localhost:8080/zendtest/public/images/logo.png"/>
+                    <?php //echo $this->translate('Shoaib Zend Training') ?></a>
+                    </div>
+                    <div class="nav-collapse collapse main-navigation">
                         <ul class="nav">
-                            <li class="active"><a href="<?php echo $this->url('home') ?>"><?php echo $this->translate('Home') ?></a></li>
+                            <li><a href="<?php echo $this->url('home') ?>"><?php echo $this->translate('Home') ?></a></li>
                             <li><a href="<?php echo $this->url('stickynotes') ?>"><?php echo $this->translate('Stickynotes') ?></a></li>
                             <li><a href="<?php echo $this->url('album') ?>"><?php echo $this->translate('Album') ?></a></li>
+                            <li><a href="<?php echo $this->url('about') ?>"><?php echo $this->translate('About') ?></a></li>
                         </ul>
                     </div><!--/.nav-collapse -->
+                    <div class="search-section">
+                        <input type="text" name="search" value="Search" />
+                    </div>
                 </div>
             </div>
         </div>
@@ -49,8 +57,41 @@
 <?php echo $this->content; ?>
             <hr>
             <footer>
-                <p>&copy; 2005 - 2012 by Zend Technologies Ltd. <?php echo $this->translate('All rights reserved.') ?></p>
-                <p>Handcrafted with ♥ in Los Angeles by Big Employee LLC.</p>
+                <div class="main-footer">
+                <div class="span2">
+                    <h4><?php echo $this->translate('Product') ?></h4>
+                    <ul>
+                    <li><a data-track-event="click.pricing_plan" href="#" class="evented">Pricing</a></li>
+                    <li><a data-track-event="click.footer_link" href="#" class="evented">Schedule a Demo</a></li></ul>
+                </div>
+                <div class="span2">
+                    <h4><?php echo $this->translate('Why DevSpave') ?></h4>
+                    <ul class="m-b">
+                    <li class="list-subheading">For Publishers</li>
+                    <li><a data-track-event="click.footer_link" href="#" class="evented">Track Competitors</a></li>
+                    <li><a data-track-event="click.footer_link" href="#" class="evented">Advertise Smarter</a></li>
+                    <li><a data-track-event="click.footer_link" href="#" class="evented">Discover Breakout Apps</a></li></ul>
+                </div>
+                <div class="span2">
+                    <h4><?php echo $this->translate('How We Compare') ?></h4>
+                    <ul class="m-b"><li><a data-track-event="click.footer_link" href="/compare/apptopia-vs-sensor-tower" class="evented">Apptopia vs. SensorTower</a></li><li><a data-track-event="click.footer_link" href="/compare/apptopia-vs-similarweb" class="evented">Apptopia vs. SimilarWeb</a></li><li><a data-track-event="click.footer_link" href="/compare/apptopia-vs-mixrank" class="evented">Apptopia vs. MixRank</a></li><li><a data-track-event="click.footer_link" href="/compare/apptopia-vs-priori-data" class="evented">Apptopia vs. Priori Data</a></li><li><a data-track-event="click.footer_link" href="/compare/apptopia-vs-mightysignal" class="evented">Apptopia vs. Mighty Signal</a></li><li><a data-track-event="click.footer_link" href="/compare/apptopia-vs-datanyze" class="evented">Apptopia vs. Datanyze</a></li></ul>
+                </div>
+                
+                <div class="span2">
+                    <h4><?php echo $this->translate('How We Compare') ?></h4>
+                    <ul class="m-b"><li><a data-track-event="click.footer_link" href="/compare/apptopia-vs-sensor-tower" class="evented">Apptopia vs. SensorTower</a></li><li><a data-track-event="click.footer_link" href="/compare/apptopia-vs-similarweb" class="evented">Apptopia vs. SimilarWeb</a></li><li><a data-track-event="click.footer_link" href="/compare/apptopia-vs-mixrank" class="evented">Apptopia vs. MixRank</a></li><li><a data-track-event="click.footer_link" href="/compare/apptopia-vs-priori-data" class="evented">Apptopia vs. Priori Data</a></li><li><a data-track-event="click.footer_link" href="/compare/apptopia-vs-mightysignal" class="evented">Apptopia vs. Mighty Signal</a></li><li><a data-track-event="click.footer_link" href="/compare/apptopia-vs-datanyze" class="evented">Apptopia vs. Datanyze</a></li></ul>
+                </div>
+                
+                <div class="span2">
+                    <h4><?php echo $this->translate('How We Compare') ?></h4>
+                    <ul class="m-b"><li><a data-track-event="click.footer_link" href="/compare/apptopia-vs-sensor-tower" class="evented">Apptopia vs. SensorTower</a></li><li><a data-track-event="click.footer_link" href="/compare/apptopia-vs-similarweb" class="evented">Apptopia vs. SimilarWeb</a></li><li><a data-track-event="click.footer_link" href="/compare/apptopia-vs-mixrank" class="evented">Apptopia vs. MixRank</a></li><li><a data-track-event="click.footer_link" href="/compare/apptopia-vs-priori-data" class="evented">Apptopia vs. Priori Data</a></li><li><a data-track-event="click.footer_link" href="/compare/apptopia-vs-mightysignal" class="evented">Apptopia vs. Mighty Signal</a></li><li><a data-track-event="click.footer_link" href="/compare/apptopia-vs-datanyze" class="evented">Apptopia vs. Datanyze</a></li></ul>
+                </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="span12">
+                         <p><?php echo sprintf($this->translate('&copy; DevSpave 2017')) ?></p>
+                    </div>
+                </div>
             </footer>
         </div> <!-- /container -->
 <?php echo $this->inlineScript() ?>
