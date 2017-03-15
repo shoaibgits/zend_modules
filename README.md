@@ -34,28 +34,71 @@ available.)
 
 Database
 --------
-Create Database and run the following query to create the table and insert
-sample data.
+--
+-- Table structure for table `about`
+--
 
-    -- -----------------------------------------------------
-    -- Table `stickynotes`.`stickynotes`
-    -- -----------------------------------------------------
-    DROP TABLE IF EXISTS `stickynotes`.`stickynotes` ;
-    CREATE TABLE IF NOT EXISTS `stickynotes`.`stickynotes` (
-    `id` INT NOT NULL AUTO_INCREMENT ,
-    `note` VARCHAR(255) NULL ,
-    `created` TIMESTAMP NOT NULL ,
-    PRIMARY KEY (`id`) ,
-    UNIQUE INDEX `id_UNIQUE` (`id` ASC) )
-    ENGINE = MyISAM;
-    -- -----------------------------------------------------
-    -- Data for table `stickynotes`.`stickynotes`
-    -- -----------------------------------------------------
-    START TRANSACTION;
-    USE `stickynotes`;
-    INSERT INTO `stickynotes`.`stickynotes` (`id`, `note`, `created`) VALUES (1, 'This is a sticky note you can type and edit.', '');
-    INSERT INTO `stickynotes`.`stickynotes` (`id`, `note`, `created`) VALUES (NULL, 'This is another sticky note ', NULL);
-    COMMIT;
+CREATE TABLE `about` (
+  `id` int(10) NOT NULL,
+  `name` varchar(155) NOT NULL,
+  `email` varchar(155) NOT NULL,
+  `phone` varchar(155) NOT NULL,
+  `address` varchar(155) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
+
+--
+-- Dumping data for table `about`
+--
+
+INSERT INTO `about` (`id`, `name`, `email`, `phone`, `address`) VALUES
+(1, 'Shoaib', 'shoaib@zend.com', '0987654321', 'Universe');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `album`
+--
+
+CREATE TABLE `album` (
+  `id` int(11) NOT NULL,
+  `artist` varchar(100) NOT NULL,
+  `title` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `album`
+--
+
+INSERT INTO `album` (`id`, `artist`, `title`) VALUES
+(2, 'Adele', '21'),
+(3, 'Bruce  Springsteen', 'Wrecking Ball (Deluxe)'),
+(4, 'Lana  Del  Rey', 'Born  To  Die'),
+(5, 'Gotye', 'Making  Mirrors'),
+(6, 'Shoaib', 'Banner Slider'),
+(7, 'Shoaib', 'TMK | That\'s my kind');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `stickynotes`
+--
+
+CREATE TABLE `stickynotes` (
+  `id` int(11) NOT NULL,
+  `note` varchar(255) DEFAULT NULL,
+  `created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 ROW_FORMAT=DYNAMIC;
+
+--
+-- Dumping data for table `stickynotes`
+--
+
+INSERT INTO `stickynotes` (`id`, `note`, `created`) VALUES
+(1, 'This is a sticky note you can type and edit.', '0000-00-00 00:00:00'),
+(2, 'This is another sticky note ', '2017-03-07 06:13:49'),
+(17, NULL, '2017-03-15 06:47:24'),
+(12, 'dasdasdasdasdasd', '2017-03-13 07:42:04');
+
 
 open config/autoload/global.php and config/autoload/local.php and configure
 your Database credentials.
